@@ -1,0 +1,80 @@
+body{
+
+    margin: 0px;
+    padding:0px;
+    background-color: #B2E4DB;
+    text-align: center;
+    font-size: 3vmin;
+    font-family: 'Segoe UI Emoji',  sans-serif;
+}
+
+
+
+.containeer{
+    
+height: 70vh;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+
+
+}
+
+
+
+.game{
+
+    height:60vh;
+    width:60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:1.5vmin;
+}
+
+.box{
+   height:18vh;
+   width:18vh;
+   background-color: #D7FDEC;
+   font-size: 8vmin;
+   border-radius: 20px;
+   border: 2px solid #A9FBD7;
+   box-shadow:  0 0  1rem  rgba(0, 0, 0, 0.3);
+   color: rgba(52, 14, 14, 0.559);
+   
+
+}
+
+.btn{
+
+  font-size: 4vmin;
+  border-radius: 1.5vmin;
+  color:white;
+  background-color: black;
+  padding:10px;
+
+}
+
+.msg-container {
+  display: none;
+  opacity: 0;
+  visibility: hidden; /* Hide element completely */
+  transition: opacity 0.5s ease-in-out, visibility 0s 0.5s; /* Delay visibility change until opacity transition finishes */
+}
+
+.msg-container.show {
+  display: flex;
+  height: 100vmin;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  font-size: 8vmin;
+  color: black;
+  font-weight: bold;
+  opacity: 1;
+  visibility: visible; /* Make it visible */
+  transition: opacity 0.5s ease-in-out, visibility 0s 0s; /* Instant visibility change */
+}
